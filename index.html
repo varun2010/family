@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>My Family Book</title>
+        <link rel="stylesheet" href="style_p-78.css" type="text/css">
+    </head>
+    <body>
+        <h1>My Family Book</h1>
+        <img id="img_family" src="20200117_111725 (2).jpg">
+        
+            <h1 id="extra"  style="font-weight: 900;color:blueviolet;">🎄My Family Book🎄</h1>
+        
+        <h3 id="person"></h3>
+        <h4 id="who"></h4>
+        <button onclick="change()">Next</button>        
+    </body>
+    <script>
+        var name1=[
+            "",
+  "K.S.Varun Prabhakaran",
+  "K.S.Kayal Valarmathi",
+  "M.Subashini",
+  "R.Kannan"
+];
+var who1=[
+            "",
+  "Me",
+  "My Younger Sister",
+  "My Mother",
+  "My Father"];
+var image1=[
+    "20200117_111725 (2).jpg",
+  "20200115_130324 (2).jpg",
+  "IMG-20190707-WA0007 (2).jpg",
+  "20200117_111729 (2).jpg",
+  "IMG_0449 (2).jpg"
+];
+var v=1;
+function change(){
+  if(v==5){
+    v=0;
+    document.getElementById("extra").style.display="block";
+
+  }
+  if(v==1){
+    
+    document.getElementById("extra").style.display="none";
+
+  }
+  document.getElementById("person").innerHTML=name1[v];
+  document.getElementById("img_family").src=image1[v];
+  v++;
+}
+    </script>
+</html>

@@ -1,0 +1,15 @@
+#img_family{
+    height: 850px;
+}
+body{
+    text-align: center;
+}
+
+#extra{
+    margin-bottom: 800px;
+    margin-top: -850px;
+    font-size: 65px;
+}
+button{
+    font-size: 40px;
+}
